@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+    <script>
+        window.onload = function () {
+          window.scrollTo(0, 0);
+        };
+      </script>
+    <div class="background-animation">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        <div class="floating-shape shape4"></div>
+        <div class="floating-shape shape5"></div>
+        <div class="floating-shape shape6"></div>
+    </div>
+    <nav id="desktop-nav">
+        <div class="logo">Madhav Reddy</div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class="logo">Madhav Reddy</div>
+        <div class="hamburger-menu">
+            <div class = "hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id = "profile">
+        <div class = "section-text">
+            <p class = "section_text_p1">Hello, I'm</p>
+            <h1 class = "title">Madhav Reddy</h1>
+            <div class="role-title-container">
+                <p class="section_text_p2 typewriter"></p>
+            </div>
+            <div class="btn-container">
+                <button class = "btn btn-color-2" 
+                onclick="window.open('./assets/resume-example.pdf')">
+                    Download Resume
+                </button>
+                <button class = "btn btn-color-1" 
+                onclick="location.href = '#contact'">
+                    Contact Me
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile"
+                    class = "icon" 
+                    onclick="location.href='https://www.linkedin.com/in/chennarapu/'"
+                />
+                <img 
+                    src="./assets/github.png"
+                    alt="My GitHub profile"
+                    class = "icon" 
+                    onclick="location.href='https://github.com/madhav563'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id = "about">
+      <p class = "section_text_p1">Get To Know More</p>
+      <h1 class = "title">About Me</h1>
+      <div class = "section-container">
+        <div class = "about-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <img src="./assets/experience.png"
+                    alt="Experience Icon"
+                    class = "icon"
+                    />
+                <h3>Experience</h3>
+                <p>
+                3 years <br/> AI/ML and Web Development.</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png"
+                    alt="Education Icon"
+                    class = "icon"
+                    />
+                    <h3>Education</h3>
+                    <p>Bachelor's in Information technology </p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    I'm a Software Engineer and Frontend Developer with a strong focus on Artificial Intelligence and Machine Learning. I specialize in building intelligent, high-impact solutions—ranging from high Sharpe ratio trading tools and market-neutral algorithms to sentiment analysis systems. My core strengths lie in Python, Transformers, NLP frameworks, and modern frontend stacks like React and Tailwind. I love turning complex problems into elegant, user-friendly interfaces that create real business value.
+                </p>
+            </div>
+        </div>
+      </div>  
+      <img 
+      src="./assets/arrow.png" 
+      alt="Arrow icon" 
+      class="icon arrow"
+      onclick="location.href = '#experience'" 
+      />
+    </section>
+    <section id = "experience">
+        <p class = "section_text_p1">Explore My</p>
+        <h1 class = "title">Skills & Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class = "experience-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Frontend Development</h3>
+                                <p>HTML, CSS, JavaScript, ReactJS</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Backend Development</h3>
+                                <p>Python, Java, SQL,FastAPI</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Development Tools</h3>
+                                <p>Git, VS Code, GitHub</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Enterprise Software</h3>
+                                <p>ERP Systems, LPL</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class = "experience-sub-title">AI/ML Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Machine Learning</h3>
+                                <p>Scikit-learn, TensorFlow, Keras</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>LLM Development</h3>
+                                <p>LangChain, Groq, RAG Systems</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Data Processing</h3>
+                                <p>Pandas, NumPy, FAISS</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>AI Tools</h3>
+                                <p>Streamlit, HuggingFace, Jupyter</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="work-experience-container">
+            <h2 class="experience-sub-title">Work Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Software Engineer</h3>
+                    <p class="experience-date">Oct 2023 – Present</p>
+                </div>
+                <p class="experience-company">Infor | Hyderabad, India</p>
+                <ul class="experience-details">
+                    <li>Develop and maintain key FSM (Financials and Supply Management) ERP modules, including Customer Order, Billing, Payables, and Matching.</li>
+                    <li>Leverage problem-solving skills and adaptability to enhance product quality in a fast-paced software development environment.</li>
+                    <li>Collaborate with cross-functional teams to resolve customer-reported issues and internal bugs efficiently.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Software Engineer Intern</h3>
+                    <p class="experience-date">Apr 2022 – Sep 2023</p>
+                </div>
+                <p class="experience-company">Infor | Hyderabad, India</p>
+                <ul class="experience-details">
+                    <li>Mastered Java, SQL, LPL, and ERP functional modules through intensive training, building a strong foundation in enterprise software systems.</li>
+                    <li>Delivered exceptional performance during a 6-month internship, earning a full-time role based on contributions to ERP development.</li>
+                    <li>Gained hands-on experience in business applications, bridging technical skills with real-world problem-solving.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Virtual Research Consultant</h3>
+                    <p class="experience-date">Mar 2022 – Feb 2024</p>
+                </div>
+                <p class="experience-company">WorldQuant | Part–Time, Hyderabad, India</p>
+                <ul class="experience-details">
+                    <li>Generated high Sharpe Ratio tools for arbitraging and High-Frequency Trading.</li>
+                    <li>Developed market-neutral trading algorithms for the American, European, and Asian stock markets.</li>
+                    <li>Contributed 500+ trading strategies to the alpha pool, with an average strategy life of 2 years.</li>
+                </ul>
+            </div>
+        </div>
+
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href = '#projects'" 
+        />
+    </section>
+    <section id = "projects">
+        <p class = "section_text_p1">Check Out My</p>
+        <h1 class = "title">Projects</h1>
+        <div class="experience-details-container">
+            <div class = "about-containers">
+            <div class="details-container color-container project-card">
+                <div class = "article-container">
+                    <div class="project-animation">
+                        <lottie-player 
+                            src="https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json" 
+                            background="transparent" 
+                            speed="1" 
+                            style="width: 100%; height: 200px;" 
+                            mode="normal"
+                            loop 
+                            autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+                <h2 class="experience-sub-title project-title">Multi-Agent RAG-Based Research Assistant</h2>
+                <p class="project-description">Built a Streamlit app using LangChain and Groq's Gemma-2 LLM that summarizes PDFs, YouTube videos, and websites using a multi-agent RAG system. Designed extractor, RAG, and critic agents for fast, accurate insights. Also generates personalized cold emails based on job listings.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">Grok API</span>
+                    <span class="tech-tag">FAISS</span>
+                </div>
+                <div class = "btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick = "location.href = 'https://github.com/madhav563/MultiAgent'"
+                    >
+                    GitHub
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container project-card">
+                <div class = "article-container">
+                    <div class="project-animation">
+                        <lottie-player 
+                            src="https://assets5.lottiefiles.com/packages/lf20_u25cckyh.json" 
+                            background="transparent" 
+                            speed="1" 
+                            style="width: 100%; height: 200px;" 
+                            loop 
+                            autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+                <h2 class="experience-sub-title project-title">Cold Email Generator</h2>
+                <p class="project-description">Built with Groq, LangChain, and Streamlit to generate personalized outreach emails. Extracts job listings from company career pages. Uses a vector database to match portfolio links with job descriptions. Generates tailored cold emails to improve engagement and save time.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Groq</span>
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">Streamlit</span>
+                </div>
+                <div class = "btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick = "location.href = 'https://github.com/madhav563'"
+                    >
+                    GitHub
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container project-card">
+                <div class = "article-container">
+                    <div class="project-animation">
+                        <lottie-player 
+                            src="https://assets10.lottiefiles.com/packages/lf20_xyadoh9h.json" 
+                            background="transparent" 
+                            speed="1" 
+                            style="width: 100%; height: 200px;" 
+                            loop 
+                            autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+                <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+                <p class="project-description">Designed and developed a responsive personal portfolio website to showcase projects and skills.Implemented smooth navigation, animations, and section-based layouts for a modern UI/UX.Optimized for performance and mobile responsiveness using semantic HTML and CSS best practices.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class = "btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick = "location.href = 'https://github.com/madhav563'"
+                    >
+                    GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href = '#contact'" 
+      />
+    </section>
+    <section id = "contact">
+        <p class="section_text_p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>  
+        <div class="contact-info-upper-container">
+            <div class = "contact-info-container">
+                <img 
+                src="./assets/email.png"
+                alt="Email Icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:madhavreddy563@gmail.com">madhavreddy563@gmail.com</a></p>
+            </div>       
+            <div class = "contact-info-container">
+                <img 
+                src="./assets/linkedin.png"
+                alt="LinkedIn Icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/chennarapu/">LinkedIn</a></p>
+            </div>       
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class = "footer-text">
+            <div>Built and designed by Madhav Reddy. </div>
+            <div>All rights reserved. ©</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
